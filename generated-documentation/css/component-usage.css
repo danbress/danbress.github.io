@@ -99,6 +99,10 @@ p strong {
 }
 
 /* ul li */
+ul {
+	margin:0px 0px 0px 0px;
+	padding:0;
+}
 
 ul li {
     font-family: 'Noto Serif', 'DejaVu Serif', serif;
