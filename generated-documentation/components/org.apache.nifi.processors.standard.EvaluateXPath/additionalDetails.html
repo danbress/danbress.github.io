@@ -30,57 +30,6 @@
             This processor adds user-defined attributes if the &lt;Destination&gt; property is set to
             <code>flowfile-attribute</code>.
         </p>
-
-
-        <ul>
-            <li>
-                <strong>Destination</strong>
-                <ul>
-                    <li>Indicates whether the results of the XPath evaluation are
-                        written to the FlowFile content or a FlowFile attribute; if using
-                        attribute, the attribute's name must be specified in the value of
-                        the Attribute Name property.</li>
-                    <li>
-                        Valid values are:
-                        <ul>
-                            <li>flowfile-content</li>
-                            <li>flowfile-attribute</li>
-                        </ul>
-                    </li>
-                    <li>Default value: flowfile-content</li>
-                    <li>Supports expression language: false</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Return Type</strong>
-                <ul>
-                    <li>Indicates the desired return type of the Xpath expressions.
-                        Selecting 'auto-detect' will set the return type to 'nodeset' for a
-                        Destination of 'flowfile-content', and 'string' for a Destination of
-                        'flowfile-attribute'.")</li>
-                    <li>
-                        Valid values are:
-                        <ul>
-                            <li>auto-detect</li>
-                            <li>nodeset</li>
-                            <li>string</li>
-                        </ul>
-                    </li>
-                    <li>Default value: auto-detect</li>
-                    <li>Supports expression language: false</li>
-                </ul>
-            </li>
-            <li>
-                user-defined properties
-                <ul>
-                    <li>The name of the attribute to put the XPath result into if
-                        flowfile-attribute is used as the value for the Destination
-                        property; if using flowfile-content as the value for the
-                        Destination property, this value is ignored.</li>
-                    <li>Supports expression language: false</li>
-                </ul>
-            </li>
-        </ul>
     </p>
 </body>
 </html>
